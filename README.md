@@ -2,7 +2,10 @@
 
 ### Usage
 
-The code on this repo uses the authorization code flow from spotify to refresh an already generated token. To understand how the authorization flow works follow the guide : 
+The code on this repo uses the authorization code flow from spotify to retrieve the recently played track from spotify and refresh an already generated token. 
+*Note The function should run with a cron job at least every hour before the authorization expires. 
+
+To understand how the authorization flow works follow the guide : 
 https://developer.spotify.com/documentation/web-api/tutorials/code-flow
 
 You can use the following CURL calls to: 
