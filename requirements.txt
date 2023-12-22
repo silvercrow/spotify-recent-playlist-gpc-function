@@ -3,3 +3,4 @@ Werkzeug==2.2.2
 flask==2.2.2
 functions-framework==3.*
 pyyaml== 6.0
+requests==2.31.0
