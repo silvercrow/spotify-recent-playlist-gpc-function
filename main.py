@@ -90,12 +90,13 @@ def recent_playlist(request):
                 #save playlist
                 result = db.spotify.update_one(filter_criteria, {
                     '$set': {
-                        'recently_played': recently_played_result
+                        'recently_played': recently_played_result["items"]
                     }
                 })
             else:
                 print("Failed to get recently played songs")
             
+
 
             #Refresh token
             token_refresh_result =  refresh_token(refreshToken)
